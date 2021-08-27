@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>电子证书生成</title>
+ <script src="https://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<pre >
+    <canvas style="background-color: #fff;" id="myCanVas" width="600px" height="843px">不好意思！！您的浏览器不支持canvas标签</canvas>
+</pre>
+	
+<pre>
+<input type="text" placeholder="请输入姓名" id="text" >
+请输入相关文字:
+<input type="text" id="prize">
+请输入日期：
+<input type="date" id="day">
+<input type="button" value="点击获取" id="submit">
+<button onclick="exportCanvasAsPNG('myCanVas','E-Cert')">保存图片</button>
+</pre>
+<script type="text/javascript" src="script.js"></script>
+	
+
+</body>
+</html>
